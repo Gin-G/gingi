@@ -15,6 +15,8 @@ A living description of how Nick writes. Refine this over time as new patterns a
 - Credit thoughtfulness and approach, not just execution ("She thoughtfully implemented these solutions so that they scale...").
 - Acknowledge gaps the work filled ("brings a modernization sorely needed...").
 - Close paragraphs with forward-looking implications, not summaries.
+- Use concrete numbers without dramatizing them — figures stand on their own, no percentage framing or superlatives stacked on top.
+- In review writing, sequence evidence to follow the order of the goal bullets or rubric being addressed.
 
 ## Things to avoid
 
@@ -34,7 +36,7 @@ A living description of how Nick writes. Refine this over time as new patterns a
 ## Voice in different contexts
 
 - **Manager comments on reviews:** Warm but evaluative. Specific evidence. Credits approach not just output.
-- **Self-evaluation:** Confident but not boastful. Acknowledges proudest moments specifically. Doesn't oversell or undersell.
+- **Self-evaluation:** Opens with a plain summary statement — no preamble, no corporate framing. Confident but not boastful. Acknowledges proudest moments specifically. Doesn't oversell or undersell.
 - **Technical writing:** Includes the "why" alongside the "what." Brief explanations of tools when they're introduced.
 
 ## How this document evolves
