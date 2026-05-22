@@ -203,44 +203,9 @@ The 85% problem is real: a tool that sounds like you 85% of the time can be wors
 
 ---
 
-## Appendix — Voice Guide (Starting Point)
+## Appendix — Voice Guide
 
-This is what I've picked up about your voice from our conversation. Refine this over time as you notice more patterns.
-
-### Sentence patterns
-
-- Long sentences with stacked explanatory clauses, not short choppy ones.
-- Each clause often explains a related deliverable or implication.
-- Comfortable with sentences that go 30-40 words if they're doing real work.
-
-### Structural patterns
-
-- Lead with what something does or why it matters, then the specific work or person.
-- Connect individual deliverables to platform-level outcomes ("Her work has enabled CIRRUS to become...").
-- Credit thoughtfulness and approach, not just execution ("She thoughtfully implemented these solutions so that they scale...").
-- Acknowledge gaps the work filled ("brings a modernization sorely needed...").
-- Close paragraphs with forward-looking implications, not summaries.
-
-### Things you avoid
-
-- Marketing language ("delivered routing continuity," "at scale," "significantly").
-- Superlatives and hedging caveats.
-- Bullet points in narrative prose.
-- Over-explaining what tools do — brief context only.
-- Stacking adjectives.
-
-### Tone
-
-- Plain, direct, confident without being aggressive.
-- Acknowledges challenges and trade-offs honestly.
-- Credits team members specifically and concretely.
-- Includes operational details only someone who actually understood the work would know.
-
-### Voice in different contexts
-
-- **Manager comments on reviews:** Warm but evaluative. Specific evidence. Credits approach not just output.
-- **Self-evaluation:** Confident but not boastful. Acknowledges proudest moments specifically. Doesn't oversell or undersell.
-- **Technical writing:** Includes the "why" alongside the "what." Brief explanations of tools when they're introduced.
+The Voice Guide has moved to [`knowledge/voice-guide.md`](knowledge/voice-guide.md) as the living document. The version originally drafted here is preserved there as the starting point and gets refined as new patterns surface.
 
 ---
 
