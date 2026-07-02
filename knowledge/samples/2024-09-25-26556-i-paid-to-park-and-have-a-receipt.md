@@ -1,0 +1,12 @@
+---
+context: Email — "Re:[## 26556 ##] I paid to park and have a receipt from the pay
+ provider."
+audience: 
+date: 2024-09-25
+---
+
+We are not able to remove or reduce this notice any further as this is a penalty for not following the posted rules of the lot. This is a privately owned and operated parking lot, the parking lot rules, fees and fines are set by the owner/operator. As the parking enforcement company, we are bound by contract to uphold all parking lot rules and fines set forth by our client. To speak to one of our specialists or to process payment, please call our office at 877-302-7275 Monday-Friday 8am to 5pm MST. Heather ---- on Tue, 24 Sep 2024 09:20:57 -0600 "Nick Cote"<nickco7@gmail.com> wrote ---- I followed the rules and regulations. The terms and conditions for the lot do not specify that there is a $92 fee for being at the exit 8 minutes after your parking expires. I have looked thoroughly at the Terms and conditions, FAQs, Privacy Policy, and the License Plate Recognition Policy that I agreed to when paying for my parking and there's no mention of a penalty. I was in the lot 10 days ago and none of the signage at the facility mention this either. This seems to be hidden on purpose to collect outrageous fees and take advantage of unsuspecting individuals. I was back at the lot before my parking expired and my vehicle exited the parking spot before the time expired. It's a busy lot after the baseball game ends. It took at least 10 minutes to navigate other cars exiting and waiting for pedestrian traffic. On Tue, Sep 24, 2024 at 8:06 AM Zoho Admin <disputes@prrs1.zohodesk.com> wrote:
+
+Notice# LAZDEN-122203, License Plate# CTVQ68
+
+ Dear Nicholas, Thank you for submitting your dispute and information. We have carefully reviewed your dispute. Based on the provided information, the notice is valid and the dispute is denied. Please note that when using a parking facility, it is a requirement to follow the rules of use for the property or you are in violation of the terms of use. We do appreciate your efforts to resolve and settle this notice; therefore, we are offering a settlement amount of $72.00 if paid within 10 days. The original notice amount is $92.00. The settlement offer is a $20.00 discount. PLEASE PAY THE NET SETTLEMENT AMOUNT OF $72.00. Thank you for your prompt cooperation. Regards, PRRS Parking Dispute Resolution team p: 877-302-7275 -- Nicholas A. Cote NickCo7@gmail.com (508)735-5558
