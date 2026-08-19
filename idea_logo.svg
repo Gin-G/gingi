@@ -1,0 +1,208 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="34%" r="78%">
+      <stop offset="0" stop-color="#233041"/>
+      <stop offset="0.55" stop-color="#141b24"/>
+      <stop offset="1" stop-color="#0a0d12"/>
+    </radialGradient>
+    <linearGradient id="skin" x1="0.1" y1="0" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#f8d3b2"/>
+      <stop offset="0.5" stop-color="#eab68d"/>
+      <stop offset="1" stop-color="#c68a62"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0.15" y1="0" x2="0.7" y2="1">
+      <stop offset="0" stop-color="#e3813c"/>
+      <stop offset="0.5" stop-color="#c25a22"/>
+      <stop offset="1" stop-color="#8f3a12"/>
+    </linearGradient>
+    <linearGradient id="beard" x1="0.25" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#e2782f"/>
+      <stop offset="0.45" stop-color="#c05320"/>
+      <stop offset="1" stop-color="#87310e"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0.1" y1="0.05" x2="0.95" y2="1">
+      <stop offset="0" stop-color="#eef3f8"/>
+      <stop offset="0.28" stop-color="#a9b6c3"/>
+      <stop offset="0.62" stop-color="#67737f"/>
+      <stop offset="1" stop-color="#333c45"/>
+    </linearGradient>
+    <linearGradient id="metalDark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8f9caa"/>
+      <stop offset="1" stop-color="#414b56"/>
+    </linearGradient>
+    <radialGradient id="optic" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#fff2ec"/>
+      <stop offset="0.25" stop-color="#ff6a3d"/>
+      <stop offset="0.7" stop-color="#e11d0c"/>
+      <stop offset="1" stop-color="#7a0b05"/>
+    </radialGradient>
+    <radialGradient id="scalp" cx="45%" cy="18%" r="55%">
+      <stop offset="0" stop-color="#ffe6cd" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#ffe6cd" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-120%" y="-120%" width="340%" height="340%">
+      <feGaussianBlur stdDeviation="9" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <clipPath id="badge">
+      <circle cx="256" cy="256" r="242"/>
+    </clipPath>
+
+    <!-- bust silhouette: skull + beard + neck + shoulders -->
+    <clipPath id="bust">
+      <path d="M256 100 C196 100 156 144 154 202 C153 230 156 248 161 266
+               C169 306 202 342 256 346 C310 342 343 306 351 266
+               C356 248 359 230 358 202 C356 144 316 100 256 100 Z"/>
+      <path d="M164 210 C156 250 156 296 172 332 C190 372 220 394 256 396
+               C292 394 322 372 340 332 C356 296 356 250 348 210
+               C342 252 330 278 308 292 C289 303 272 307 256 307
+               C240 307 223 303 204 292 C182 278 170 252 164 210 Z"/>
+      <path d="M214 316 L298 316 L298 374 C358 388 406 416 416 490 L96 490 C106 416 154 388 214 374 Z"/>
+    </clipPath>
+
+    <!-- torn boundary: everything right of the rip is machine -->
+    <clipPath id="machine">
+      <path d="M250 86 L272 122 L248 150 L274 184 L252 212 L280 244 L256 274
+               L278 306 L254 336 L274 370 L248 408 L268 450 L252 504 L504 504 L504 86 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- badge -->
+  <circle cx="256" cy="256" r="242" fill="url(#bg)"/>
+  <circle cx="256" cy="256" r="240" fill="none" stroke="#2c3846" stroke-width="6"/>
+  <circle cx="256" cy="256" r="228" fill="none" stroke="#e1481f" stroke-width="3" opacity="0.55"/>
+
+  <g clip-path="url(#badge)">
+    <g clip-path="url(#bust)">
+      <!-- ================= HUMAN ================= -->
+      <!-- shoulders + neck -->
+      <path d="M214 316 L298 316 L298 374 C358 388 406 416 416 490 L96 490 C106 416 154 388 214 374 Z"
+            fill="#23303f"/>
+      <path d="M214 316 L298 316 L298 376 C274 386 240 386 214 376 Z" fill="#cf9469"/>
+      <path d="M214 316 L298 316 L298 342 C274 356 240 356 214 342 Z" fill="#ae7752"/>
+
+      <!-- skull -->
+      <path d="M256 100 C196 100 156 144 154 202 C153 230 156 248 161 266
+               C169 306 202 342 256 346 C310 342 343 306 351 266
+               C356 248 359 230 358 202 C356 144 316 100 256 100 Z"
+            fill="url(#skin)"/>
+      <ellipse cx="238" cy="150" rx="66" ry="42" fill="url(#scalp)"/>
+      <path d="M154 202 C153 236 158 260 166 280 C177 308 198 330 224 340
+               C196 326 176 300 168 264 C161 240 159 220 161 200 Z" fill="#000" opacity="0.10"/>
+
+      <!-- ears -->
+      <path d="M154 216 C142 212 136 224 140 240 C143 254 152 262 159 260 Z" fill="#e0a478"/>
+      <path d="M358 216 C370 212 376 224 372 240 C369 254 360 262 353 260 Z" fill="#cf9469"/>
+
+      <!-- buzzed, receded ginger crop: a thin crescent on the sides, bald crown -->
+      <path d="M154 214 C152 178 162 148 182 128 C194 116 208 108 222 104
+               C200 118 184 138 175 162 C167 184 164 198 165 216 Z"
+            fill="url(#hair)" opacity="1"/>
+      <path d="M358 214 C360 178 350 148 330 128 C318 116 304 108 290 104
+               C312 118 328 138 337 162 C345 184 348 198 347 216 Z"
+            fill="url(#hair)" opacity="1"/>
+      <path d="M156 212 C155 236 158 254 163 268 L180 262 C174 246 170 230 170 212 Z" fill="url(#hair)"/>
+      <path d="M356 212 C357 236 354 254 349 268 L332 262 C338 246 342 230 342 212 Z" fill="url(#hair)"/>
+      <path d="M170 176 C190 142 220 126 256 126 C292 126 322 142 342 176
+               C318 152 290 142 256 142 C222 142 194 152 170 176 Z"
+            fill="#c9642e" opacity="0.32"/>
+      <path d="M158 206 C160 180 168 158 182 140 C172 164 167 186 168 208 Z"
+            fill="#a8420f" opacity="0.45"/>
+
+      <!-- brows -->
+      <path d="M184 214 C202 202 226 202 240 211" fill="none" stroke="#b0491a" stroke-width="10" stroke-linecap="round"/>
+      <path d="M272 211 C288 202 310 202 328 214" fill="none" stroke="#b0491a" stroke-width="10" stroke-linecap="round"/>
+
+      <!-- eye (blue-green) -->
+      <path d="M186 238 C199 225 225 225 238 238 C225 252 199 252 186 238 Z" fill="#f7eee5"/>
+      <circle cx="212" cy="238" r="10" fill="#3c8296"/>
+      <circle cx="212" cy="238" r="4.5" fill="#101418"/>
+      <circle cx="215.5" cy="234.5" r="2.6" fill="#ffffff" opacity="0.9"/>
+      <path d="M186 238 C199 226 225 226 238 238" fill="none" stroke="#8a5a3c" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+
+      <!-- nose -->
+      <path d="M256 226 L245 268 C250 275 263 275 268 268" fill="none" stroke="#bd8055" stroke-width="5"
+            stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+
+      <!-- full ginger beard -->
+      <path d="M164 210 C156 250 156 296 172 332 C190 372 220 394 256 396
+               C292 394 322 372 340 332 C356 296 356 250 348 210
+               C342 252 330 278 308 292 C289 303 272 307 256 307
+               C240 307 223 303 204 292 C182 278 170 252 164 210 Z"
+            fill="url(#beard)"/>
+      <path d="M170 268 C176 320 204 366 256 380 C308 366 336 320 342 268
+               C338 328 306 376 256 392 C206 376 174 328 170 268 Z"
+            fill="#000" opacity="0.10"/>
+      <path d="M196 250 C206 300 226 336 256 352" fill="none" stroke="#e2883f" stroke-width="5"
+            stroke-linecap="round" opacity="0.35"/>
+      <path d="M214 244 C222 296 238 330 258 344" fill="none" stroke="#e2883f" stroke-width="4"
+            stroke-linecap="round" opacity="0.25"/>
+      <!-- moustache -->
+      <path d="M216 288 C234 276 250 279 256 287 C262 279 278 276 296 288
+               C284 306 266 311 256 311 C246 311 228 306 216 288 Z" fill="url(#beard)"/>
+      <path d="M230 300 C242 308 270 308 282 300" fill="none" stroke="#6b2408" stroke-width="6" stroke-linecap="round"/>
+
+      <!-- ================= MACHINE ================= -->
+      <g clip-path="url(#machine)">
+        <rect x="14" y="14" width="484" height="484" fill="url(#bg)"/>
+        <path d="M256 100 C196 100 156 144 154 202 C153 230 156 248 161 266
+                 C169 306 202 342 256 346 C310 342 343 306 351 266
+                 C356 248 359 230 358 202 C356 144 316 100 256 100 Z"
+              fill="url(#metal)"/>
+        <path d="M222 300 C218 332 234 362 256 370 C278 362 296 332 292 300 Z" fill="url(#metal)"/>
+        <path d="M214 316 L298 316 L298 374 C358 388 406 416 416 490 L244 490 Z" fill="url(#metalDark)"/>
+        <path d="M246 316 L298 316 L298 376 C282 382 264 384 248 380 Z" fill="url(#metal)"/>
+
+        <!-- cranial seams -->
+        <path d="M262 104 C314 108 348 144 354 196" fill="none" stroke="#f2f7fb" stroke-width="5" opacity="0.5"/>
+        <path d="M268 128 C312 136 340 164 346 202" fill="none" stroke="#2b333b" stroke-width="4" opacity="0.7"/>
+        <!-- brow ridge -->
+        <path d="M272 208 C298 197 324 199 342 212 L340 226 C322 214 298 212 274 220 Z" fill="#2a323a"/>
+        <!-- optic -->
+        <circle cx="306" cy="242" r="25" fill="#191f26"/>
+        <circle cx="306" cy="242" r="25" fill="none" stroke="#c3ced9" stroke-width="4"/>
+        <circle cx="306" cy="242" r="31" fill="none" stroke="#5b6673" stroke-width="3" opacity="0.8"/>
+        <g filter="url(#glow)"><circle cx="306" cy="242" r="14" fill="url(#optic)"/></g>
+        <circle cx="301" cy="237" r="3.5" fill="#fff" opacity="0.85"/>
+        <!-- cheek strut -->
+        <path d="M290 272 L340 252 L346 267 L298 290 Z" fill="#3d4750"/>
+        <path d="M290 272 L340 252" fill="none" stroke="#dde5ec" stroke-width="2.5" opacity="0.6"/>
+        <!-- exposed teeth + jaw -->
+        <path d="M256 292 L318 285 L316 306 L256 313 Z" fill="#e8eef4"/>
+        <path d="M270 288 L270 310 M282 287 L282 309 M294 286 L294 308 M306 285 L306 307"
+              stroke="#8e9aa6" stroke-width="2.5"/>
+        <path d="M256 313 C282 328 306 322 322 306 L314 326 C298 342 274 344 256 332 Z" fill="#39424b"/>
+        <path d="M256 332 C272 344 288 344 300 336 L288 358 C276 366 264 368 256 366 Z" fill="#4a545f"/>
+        <!-- hinge + rivets -->
+        <circle cx="338" cy="276" r="7" fill="#20272e" stroke="#b9c4cf" stroke-width="3"/>
+        <circle cx="288" cy="178" r="4" fill="#2a323a"/>
+        <circle cx="320" cy="166" r="4" fill="#2a323a"/>
+        <path d="M262 156 L348 176" fill="none" stroke="#39424b" stroke-width="3" opacity="0.75"/>
+        <!-- neck pistons -->
+        <path d="M264 330 L264 382 M282 328 L282 380" stroke="#8e9aa6" stroke-width="8" stroke-linecap="round"/>
+        <path d="M264 330 L264 382 M282 328 L282 380" stroke="#3a434c" stroke-width="2.5" stroke-linecap="round"/>
+        <!-- shoulder plate -->
+        <path d="M298 380 C356 392 404 420 416 490" fill="none" stroke="#dfe7ee" stroke-width="4" opacity="0.55"/>
+        <path d="M302 386 C350 398 390 426 404 474" fill="none" stroke="#39434d" stroke-width="4" opacity="0.8"/>
+        <path d="M314 412 C348 426 374 448 384 478" fill="none" stroke="#5b6673" stroke-width="3" opacity="0.7"/>
+      </g>
+
+      <!-- torn flesh edge -->
+      <path d="M250 86 L272 122 L248 150 L274 184 L252 212 L280 244 L256 274
+               L278 306 L254 336 L274 370 L248 408 L268 450 L252 504"
+            fill="none" stroke="#7d2c0c" stroke-width="7" stroke-linejoin="round" opacity="0.9"/>
+      <path d="M250 86 L272 122 L248 150 L274 184 L252 212 L280 244 L256 274
+               L278 306 L254 336 L274 370 L248 408 L268 450 L252 504"
+            fill="none" stroke="#c0503a" stroke-width="2.5" stroke-linejoin="round" opacity="0.9"/>
+    </g>
+
+    <!-- silhouette outline -->
+    <path d="M256 100 C196 100 156 144 154 202 C153 230 156 248 161 266 C169 306 202 342 256 346"
+          fill="none" stroke="#0b0e13" stroke-width="4" opacity="0.45"/>
+    <path d="M164 210 C156 250 156 296 172 332 C190 372 220 394 256 396"
+          fill="none" stroke="#0b0e13" stroke-width="4" opacity="0.45"/>
+    <path d="M96 490 C106 416 154 388 214 374 L214 316 M298 316 L298 374 C358 388 406 416 416 490"
+          fill="none" stroke="#0b0e13" stroke-width="4" opacity="0.4"/>
+  </g>
+</svg>
